@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>random dog pic app</title>
+    <title>dog breed app</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
         type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
@@ -17,26 +17,21 @@
     </header>
 
     <main>
-        <form id="numberSubmission">
-            <label for="dogPictures">Number dog pic (1-50):</label>
-
-            <input type="number" id="dogPictures" name="dogPictures" min="1" max="50" value="3"><br>
-
-            <button type="submit" value="submit">
-                submit
-            </button>
-        </form>
-        <div id="pix" class="container">
-            <section class="results hidden">
-                <h2>How Many Dogs Can You See?</h2>
-                <img class="dog-images" alt="placeholder">
-            </section>
-        </div>
+        <form id="dogSubmission">
+             <h3>Name Your Breed</h3>
+                <input type="text" id="dog-breed" class="form-control" placeholder="Name a breed" required />
+                </div>
+                <div>
+                    <input type="submit" id="get-dog-photo" value="Get Dog Photo!" />
+                </div>
+                <div class="results hidden">
+                    <h3>Here's your dog pictures</h3>
+                </div>
 
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
